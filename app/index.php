@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 /* ----------------------------------------
 	Checkings
 ---------------------------------------- */
@@ -29,20 +28,6 @@ if ($erreur !== true) {
 
 require_once '../classes/Membre.php';
 $membre = new Membre($db);
-
-require_once '../classes/Question.php';
-$question = new Question($db);
-
-require_once '../classes/Recommendation.php';
-$recommendation = new Recommendation($db);
-
-require_once '../classes/Statistics.php';
-$statistics = new Statistics($db);
-
-require_once '../classes/Theme.php';
-$theme = new Theme($db);
-
-require_once '../classes/Tool.php';
 
 
 /* ----------------------------------------
