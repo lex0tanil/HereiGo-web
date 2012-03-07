@@ -2,6 +2,10 @@
 
 class Tool {
 	
+	public function generateTempKey() {
+		
+	}
+	
 }
 
 ?>
