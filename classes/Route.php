@@ -27,7 +27,10 @@ class Route extends ConnectedItem {
 		return $returnObject;
 	}
 	
-	public function addRoute($user_id, $title) {
+	public function addRoute($user_id, $title, $sAddress='', $eAddress='') {
+		if($sAddress != '' && eAddress != ''){
+			$this->directions[$dirId] = array("dirId"=>$dirId, "start"=>$sAddress, "end"=>$eAddress);
+		}
 	
 	}
 			
