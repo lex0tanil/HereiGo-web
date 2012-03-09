@@ -13,9 +13,9 @@ class DBConnect {
 	public function connect() {
 		ob_start();
 		$this->link = mysql_connect($this->db_host, $this->db_login, $this->db_pass, true);
-		$erreur = ob_get_contents();
+		$error = ob_get_contents();
         ob_end_clean();
-		if ($erreur != '' || $this->link === false) return 'mysql_error: "'.mysql_error().'" | erreur: "'.$erreur.'"';
+		if ($error != '' || $this->link === false) return 'mysql_error: "'.mysql_error().'" | error: "'.$error.'"';
 		
 		return mysql_select_db($this->db_base, $this->link);
 	}
